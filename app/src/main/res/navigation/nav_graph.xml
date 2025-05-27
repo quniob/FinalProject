@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.finalproject.HomeFragment"
+        android:label="Developer Tools"
+        tools:layout="@layout/fragment_home">
+        
+        <action
+            android:id="@+id/action_home_to_uuid"
+            app:destination="@id/uuidGeneratorFragment" />
+            
+        <action
+            android:id="@+id/action_home_to_hash"
+            app:destination="@id/hashGeneratorFragment" />
+            
+        <action
+            android:id="@+id/action_home_to_regex"
+            app:destination="@id/regexTesterFragment" />
+            
+        <action
+            android:id="@+id/action_home_to_base64"
+            app:destination="@id/base64CoderFragment" />
+            
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/historyFragment" />
+            
+        <action
+            android:id="@+id/action_home_to_http_client"
+            app:destination="@id/httpClientFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/uuidGeneratorFragment"
+        android:name="com.example.finalproject.UuidGeneratorFragment"
+        android:label="UUID Generator"
+        tools:layout="@layout/fragment_uuid_generator" />
+
+    <fragment
+        android:id="@+id/hashGeneratorFragment"
+        android:name="com.example.finalproject.HashGeneratorFragment"
+        android:label="Hash Generator"
+        tools:layout="@layout/fragment_hash_generator" />
+
+    <fragment
+        android:id="@+id/regexTesterFragment"
+        android:name="com.example.finalproject.RegexTesterFragment"
+        android:label="Regex Tester"
+        tools:layout="@layout/fragment_regex_tester" />
+
+    <fragment
+        android:id="@+id/base64CoderFragment"
+        android:name="com.example.finalproject.Base64CoderFragment"
+        android:label="Base64 Coder"
+        tools:layout="@layout/fragment_base64_coder" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.finalproject.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/httpClientFragment"
+        android:name="com.example.finalproject.HttpClientFragment"
+        android:label="HTTP Client"
+        tools:layout="@layout/fragment_http_client" />
+
+</navigation>

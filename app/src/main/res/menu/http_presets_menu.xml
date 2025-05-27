@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/preset_get_json"
+        android:title="GET JSON Example"
+        android:icon="@android:drawable/ic_menu_view" />
+        
+    <item
+        android:id="@+id/preset_post_json"
+        android:title="POST JSON Example"
+        android:icon="@android:drawable/ic_menu_upload" />
+        
+    <item
+        android:id="@+id/preset_get_github"
+        android:title="GitHub API Example"
+        android:icon="@android:drawable/ic_menu_compass" />
+        
+</menu>

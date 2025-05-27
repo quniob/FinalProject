@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Home" />
+    
+    <item
+        android:id="@+id/nav_uuid"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="UUID" />
+    
+    <item
+        android:id="@+id/nav_hash"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="Hash" />
+    
+    <item
+        android:id="@+id/nav_base64"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="Base64" />
+    
+    <item
+        android:id="@+id/nav_regex"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Regex" />
+</menu>
